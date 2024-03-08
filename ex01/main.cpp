@@ -1,12 +1,31 @@
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int	main()
 {
-	ClapTrap 		a;
-	std::string		str = "str";
-	std::string		&str2 = str;
+	ClapTrap	a;
+	ScavTrap	b;
 
-	a.attack(str2);
+	std::cout << std::endl;
+	std::cout << "---------------------------------" <<  std::endl;
+	std::cout << "--------ClapTrap test------------" <<  std::endl;
+	std::cout << "---------------------------------" <<  std::endl;
+	std::cout << std::endl;
+
+	a.attack("clap1");
 	a.takeDamage(10);
 	a.beRepaired(1);
+
+	std::cout << std::endl;
+	std::cout << "---------------------------------" <<  std::endl;
+	std::cout << "--------ScavTrap test------------" <<  std::endl;
+	std::cout << "---------------------------------" <<  std::endl;
+	std::cout << std::endl;
+
+	b.attack("scav1");
+	b.takeDamage(20);
+	b.beRepaired(1);
+	b.guardGate();
+	std::cout << std::endl;
+	std::cout << std::endl;
 }
