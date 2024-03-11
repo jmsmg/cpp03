@@ -29,6 +29,16 @@ int	main()
 	b.beRepaired(1);
 	b.guardGate();
 
+	
+	std::cout << std::endl;
+	std::cout << "---------------------------------" <<  std::endl;
+	std::cout << "--------ScavTrap virtual test----" <<  std::endl;
+	std::cout << "---------------------------------" <<  std::endl;
+
+	std::cout << std::endl;
+	ClapTrap	*ptr = &b;
+	ptr->attack("virtual test");
+
 	std::cout << std::endl;
 	std::cout << std::endl;
 	std::cout << "---------------------------------" <<  std::endl;
