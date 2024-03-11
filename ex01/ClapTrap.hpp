@@ -16,7 +16,7 @@ class	ClapTrap
 			ClapTrap(const std::string name);
 			ClapTrap(const ClapTrap &claptrap);
 			ClapTrap &operator=(const ClapTrap &claptrap);
-			~ClapTrap();
+			virtual	~ClapTrap();
 			void	takeDamage(unsigned int amount);
 			void	beRepaired(unsigned int amount);
 			virtual void	attack(const std::string &target);

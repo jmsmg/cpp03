@@ -28,4 +28,11 @@ int	main()
 	b.guardGate();
 	std::cout << std::endl;
 	std::cout << std::endl;
+
+	ClapTrap	*Cptr = new ScavTrap();
+
+	Cptr->attack("a");
+	std::cout << "---" << std::endl;
+	delete Cptr;
+	std::cout << "---" << std::endl;
 }

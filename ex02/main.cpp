@@ -50,4 +50,10 @@ int	main()
 	c.beRepaired(1);
 	c.highFivesGuys();
 
+	ClapTrap	*Cptr = new ScavTrap();
+
+	Cptr->attack("a");
+	std::cout << "---" << std::endl;
+	delete Cptr;
+	std::cout << "---" << std::endl;
 }
